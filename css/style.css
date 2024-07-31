@@ -99,12 +99,12 @@ header nav ul li {
   position: relative;
   padding: 20px 0px;
 }
-header nav ul li:hover{
+header nav ul li:hover {
   color: var(--primary-color);
 }
 
-header nav ul li:hover li{
-color: white;
+header nav ul li:hover li {
+  color: white;
 }
 
 header nav ul li:last-child {
@@ -125,15 +125,14 @@ header ul li .dropdown {
   margin-right: 0px;
   white-space: nowrap;
 }
-.dropdown li:hover{
+.dropdown li:hover {
   background-color: var(--primary-color);
 }
-header nav ul li:hover .dropdown{
+header nav ul li:hover .dropdown {
   display: block;
 }
 
-
-.submenu{
+.submenu {
   display: none;
   position: absolute;
   top: 0px;
@@ -141,10 +140,10 @@ header nav ul li:hover .dropdown{
   background-color: #2d373c;
 }
 
-.submenu li{
+.submenu li {
   white-space: nowrap;
 }
-.dropdown li:hover .submenu{
+.dropdown li:hover .submenu {
   display: block;
 }
 
@@ -369,8 +368,7 @@ header .contact-info button:hover {
   margin: 40px auto 0px;
 }
 
-
-.top-destination-card{
+.top-destination-card {
   height: 400px;
   background-color: #111111;
   position: relative;
@@ -378,14 +376,14 @@ header .contact-info button:hover {
   overflow: hidden;
 }
 
-.top-destination-card img{
+.top-destination-card img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   opacity: 0.5;
   transition: all 0.5s linear;
 }
-.top-destination-card .tour-details{
+.top-destination-card .tour-details {
   position: absolute;
   top: 0;
   left: 0;
@@ -399,13 +397,13 @@ header .contact-info button:hover {
   transform: translateY(50px);
   transition: all 0.5s linear;
 }
-.top-destination-card .tour-details h3{
+.top-destination-card .tour-details h3 {
   font-family: var(--general-fonts);
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.top-destination-card .tour-details .place{
+.top-destination-card .tour-details .place {
   font-family: var(--general-fonts);
   font-size: 18px;
   font-weight: 600;
@@ -414,11 +412,11 @@ header .contact-info button:hover {
   opacity: 0;
   transition: all 0.5s linear;
 }
-.top-destination-card:hover img{
- transform: scale(1.3);
+.top-destination-card:hover img {
+  transform: scale(1.3);
 }
 
-.top-destination-card .tour-details .place::after{
+.top-destination-card .tour-details .place::after {
   content: "";
   height: 3px;
   width: 0%;
@@ -429,32 +427,32 @@ header .contact-info button:hover {
   transition: all 0.5s linear;
 }
 
-.top-destination-card .tour-details .place:hover:after{
+.top-destination-card .tour-details .place:hover:after {
   width: 100%;
 }
 
-.top-destination-card:hover .tour-details{
+.top-destination-card:hover .tour-details {
   transform: translateY(0px);
 }
-.top-destination-card:hover .tour-details .place{
-opacity: 1;
+.top-destination-card:hover .tour-details .place {
+  opacity: 1;
 }
 
-.top-destination-wrapper{
+.top-destination-wrapper {
   margin-top: 40px;
   display: grid;
-  grid-template-columns:repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
-.top-destination-card:first-child{
+.top-destination-card:first-child {
   grid-column: 1/3;
 }
-.top-destination-card:last-child{
+.top-destination-card:last-child {
   grid-column: 3/5;
 }
 
-.up-comming-tour{
+.up-comming-tour {
   padding: 100px 0px;
   background: url("../images/upcoming-bg.jpg");
   background-repeat: no-repeat;
@@ -464,7 +462,7 @@ opacity: 1;
   position: relative;
 }
 
-.up-comming-tour::after{
+.up-comming-tour::after {
   content: "";
   height: 100%;
   width: 100%;
@@ -474,21 +472,20 @@ opacity: 1;
   left: 0;
 }
 
-.up-comming-tour .section-header{
+.up-comming-tour .section-header {
   margin-bottom: 50px;
   width: 50%;
   position: relative;
   z-index: 5;
 }
 
-.up-comming-tour .section-header .title{
+.up-comming-tour .section-header .title {
   color: white;
 }
 
-.up-comming-tour .section-header p{
+.up-comming-tour .section-header p {
   color: white;
 }
-
 
 .best-selling-tours-slider .owl-nav {
   position: absolute;
@@ -506,3 +503,80 @@ opacity: 1;
   border: none !important;
 }
 
+.tour-guide-card {
+  background-color: white;
+  box-shadow: 0px 0px 1px gray;
+}
+
+.tour-guide-card .cover-img {
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.tour-guide-card .cover-img ul{
+  background-color: #4848477d;
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+ transition: all 0.5s linear;
+
+}
+
+.tour-guide-card .cover-img ul li {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tour-guide-card .cover-img ul li:hover{
+  background-color: var(--primary-color);
+  color: white;
+}
+
+
+
+.tour-guide-card .cover-img  img{
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+ transition: all 0.5s linear;
+}
+.tour-guide-card:hover .cover-img  img{
+  scale: 1.3;
+}
+
+.tour-guide-card .details {
+  text-align: center;
+  padding: 20px;
+}
+
+.tour-guide-card .details .name {
+  font-family: var(--general-fonts);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+.tour-guide-card .details span {
+  font-family: var(--general-fonts);
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(109, 109, 109);
+}
+.tour-guide-card:hover .cover-img ul{
+  left: 0px;
+}
+
+.tour-guide-wrapper{
+  margin-top: 40px;
+}
