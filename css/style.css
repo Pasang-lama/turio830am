@@ -20,6 +20,7 @@ ul {
 }
 .container {
   width: 1260px;
+  padding: 0px 10px;
   margin: 0px auto;
 }
 
@@ -192,16 +193,50 @@ header .contact-info button:hover {
 
 .banner {
   background-color: #2d373c;
+  height: 100vh !important;
+  width: 100% !important;
 }
 .banner img {
   opacity: 0.5;
   height: 100%;
   width: 100%;
 }
+.banner .plane{
+  opacity: 1;
+  height: 100px;
+  width: fit-content !important;
+  object-fit: contain;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  animation: fly 10s ease  infinite ;
+}
+@keyframes fly {
+  0%{
+    transform: translateX(0%) scale(0.5);
+    opacity: 0;
+  }
+  50%{
+    transform: translateX(50%) scale(0.8);
+    opacity: 0.7;
+  }
+  100%{
+    transform: translateX(100%) scale(0.5);
+    opacity: 0;
+  }
+}
 .banner .banner-items {
   position: relative;
   height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
 }
+.banner .owl-item{
+  height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
+}
+
 .banner .banner-items .banner-content {
   position: absolute;
   top: 50%;
